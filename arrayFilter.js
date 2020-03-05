@@ -20,3 +20,11 @@ function filtering(arr) {
 let dogs = filtering(Animals);
 
 console.log(dogs)
+
+
+
+function filterDogs(pet) {
+    return pet.species == "dog"
+}
+
+console.log(Animals.filter(filterDogs))
