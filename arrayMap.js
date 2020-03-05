@@ -17,3 +17,9 @@ function filterNames(arr) {
 animalNames = filterNames(Animals)
 
 console.log(animalNames)
+
+const filterAnimals = Animals.map(function(pet) {
+    return pet.name
+})
+
+console.log(filterAnimals)
