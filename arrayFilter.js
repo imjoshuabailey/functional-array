@@ -6,3 +6,17 @@ const Animals = [
     { name: "Ursula", species: "cat" },
     { name: "Jimmy", species: "fish" }
 ]
+
+function filtering(arr) {
+    let output = []
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i].species == "dog"){
+        output.push(arr[i])
+        }
+    }
+    return output
+}
+
+let dogs = filtering(Animals);
+
+console.log(dogs)
